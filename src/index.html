@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>js13k</title>
+    <!-- build:css assets/styles/screen.css -->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
+    <!-- endbuild -->
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="game">
+        <div id="startScreen">
+            <div class="title glitch" data-text="LEVEL 10">LEVEL 10</div>
+            <div style="color: #00b9c5">SELECT A MODE</div>
+            <div class="btn" id="classicMode">CLASSIC</div>
+            <div class="btn" id="survivalMode">SURVIVAL</div>
+            <div style="color: #c57100">HOW TO PLAY</div>
+            <div>- Move the ball by tilting/raising the bar</div>
+            <div style="color: #bbb">&nbsp;&nbsp;Controls: (click to re-bind)</div>
+            <div class="controlBinder" data-control="leftUp"></div>
+            <div class="controlBinder" data-control="leftDown"></div>
+            <div class="controlBinder" data-control="rightUp"></div>
+            <div class="controlBinder" data-control="rightDown"></div>
+            <div>- Classic Rules </div>
+            <div style="color: #bbb">&nbsp;&nbsp;Navigate the ball into the goals</div>
+            <div style="color: #bbb">&nbsp;&nbsp;Avoid all other holes</div>
+            <div>- Survival Rules </div>
+            <div style="color: #bbb">&nbsp;&nbsp;Lift the ball as high as you can</div>
+            <div style="color: #bbb">&nbsp;&nbsp;Avoid all holes</div>
+            <div>- Press 'P' to Pause</div>
+        </div>
+        <div id="pauseScreen">
+            <div class="title glitch" data-text="PAUSED">PAUSED</div>
+            <div>PRESS 'P' TO RESUME</div>
+        </div>
+        <div id="gameOverScreen">
+            <div class="title glitch" data-text="GAME OVER">GAME OVER</div>
+
+            <div class="btn" id="restart">TRY AGAIN</div>
+            <div class="btn" id="goToMenu">MAIN MENU</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="highScores">
+                </tbody>
+            </table>
+        </div>
+        <canvas id="g"></canvas>
+    </div>
+</div>
+    <!-- build:js assets/scripts/main.js --> 
+    <script src="assets/scripts/core/jsfxr.js"></script>
+    <script src="assets/scripts/core/Audio.js"></script>
+    <script src="assets/scripts/core/TinyMusic.js"></script>
+    <script src="assets/scripts/core/Physics.js"></script>
+    <script src="assets/scripts/core/Camera.js"></script>
+    <script src="assets/scripts/InputController.js"></script>
+    <script src="assets/scripts/Bar.js"></script>
+    <script src="assets/scripts/Ball.js"></script>
+    <script src="assets/scripts/Hole.js"></script>
+    <script src="assets/scripts/Pulse.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
