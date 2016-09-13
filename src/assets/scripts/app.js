@@ -144,8 +144,8 @@ var App = (function() {
                 keyBindings = {
                     'leftUp': 65, //a
                     'leftDown': 90, //z
-                    'rightUp': 186, //;
-                    'rightDown': 190 //.
+                    'rightUp': 75, //;
+                    'rightDown': 77 //.
                 };
 
                 this.storage.setItem('keyBindings', JSON.stringify(keyBindings));
